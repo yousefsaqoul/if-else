@@ -13,22 +13,29 @@
 
 <body id="mainBody">
 
-
-	<section>
-		
-	<div class="if-and-else"> 
+	<section class="nachricht">
 		<form action="">
-			<h1 style="color: rgb(0, 119, 255)"> JavaScript : if else statement</h1>
-			<h3>
-				Hier prüfen wir, ob das Alter größer als 18 ist
-				oder nicht. Shisha rauchen darf man nur, wenn man volljährig ist.
-			</h3>
-			geben Sie Ihre Alter ein
-			<input type="number" id="vol"  onchange="youAge()">
-			<input type="button" value="Alter" id="mybutton">
+			<label for=""> Welche Nachricht möchtest du weitergeben</label>
+			<input type="text" id="my-nachricht">
+			<input type="button" value="Senden" id="Nachricht" onclick="myButton()">
+			<h1>letzte Nachricht <br> </h1>
+			<span id="myspan"></span>
 		</form>
-		<h1 id="yourAge"></h1>
-	</div>
+	</section>
+	<section>
+		<div class="if-and-else"> 
+			<form action="">
+				<h1 style="color: rgb(0, 119, 255)"> JavaScript : if else statement</h1>
+				<h3>
+					Hier prüfen wir, ob das Alter größer als 18 ist
+					oder nicht. Shisha rauchen darf man nur, wenn man volljährig ist.
+				</h3>
+				geben Sie Ihre Alter ein
+				<input type="number" id="vol"  onchange="youAge()">
+				<input type="button" value="Alter" id="mybutton">
+			</form>
+			<h1 id="yourAge"></h1>
+		</div>
 	</section>
 
 <section class="rechnen">
@@ -43,14 +50,14 @@
 
 </section>
 
-<section class="nachricht">
+
+
+<section class="luft" id="luft">
 	<form action="">
-		<label for=""> Welche Nachricht möchtest du weitergeben</label>
-		<input type="text" id="my-nachricht">
-		<input type="button" value="Senden" id="Nachricht" onclick="myButton()">
-		<h1>letzte Nachricht <br> </h1>
-		<span id="myspan"></span>
+		<label for=""> Luft Qualität</label>
+		<input type="range" min="0" max="10" value="0" id="luftQuality" onchange="luft()">
 	</form>
+	<h1 id="luftQualityResult"></h1>
 </section>
 
 <script src="assets/js/main.js">

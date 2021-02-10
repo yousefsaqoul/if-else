@@ -38,3 +38,35 @@ function myButton() {
     if ( myNachricht.value.length > 0 ) {letzteNachricht.innerHTML = myNachricht.value}
     else {letzteNachricht.innerHTML = 'gib Bitte Ihre Nachricht an'}
 }
+
+
+
+
+
+
+// -----------------luft Qualität
+const luftQualityResult = document.getElementById('luftQualityResult')
+const luftQualityRange = document.getElementById('luftQuality')
+const luftBg = document.getElementById('luft')
+function luft(){
+    if (luftQuality.value <= 3 ){
+        luftQualityResult.innerHTML = "Schlecht"
+        luftBg.style.background = "yellow"
+
+    } else if (luftQuality.value >= 3 && luftQuality.value <= 7){ 
+        luftQualityResult.innerHTML = "good"
+        luftBg.style.background = "green"
+
+        
+
+    } else if (luftQuality.value > 7 ){
+        luftQualityResult.innerHTML = "super"
+        luftBg.style.background = "blue"
+
+
+    }
+
+
+}
+
+

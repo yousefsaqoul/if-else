@@ -12,7 +12,7 @@ input[type="button"]:hover {
 .if-and-else {
   background-color: lightpink;
   height: 500px;
-  width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,7 +22,7 @@ input[type="button"]:hover {
 .rechnen {
   background-color: lightgreen;
   height: 500px;
-  width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +32,7 @@ input[type="button"]:hover {
 .nachricht {
   background-color: lightblue;
   height: 500px;
-  width: 500px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,10 +43,32 @@ input[type="button"]:hover {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  width: 450px;
+  width: 50%;
   height: 300px;
   border-radius: 40px;
 }
 #myspan {
   color: lightsalmon;
+}
+
+.anasCode {
+  transition: all 0.5s;
+}
+
+#quality {
+  width: 500px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.luft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightslategrey;
+  width: 100%;
+  height: 500px;
 }
