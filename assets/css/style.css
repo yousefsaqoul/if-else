@@ -1,0 +1,10 @@
+p {
+  color: blue;
+  font-size: 60px;
+}
+input[type="button"] {
+  width: 90px;
+}
+input[type="button"]:hover {
+  background-color: lightgreen;
+}
