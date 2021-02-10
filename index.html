@@ -13,28 +13,25 @@
 
 <body id="mainBody">
 
-	<div> 
-		<form action="">
-			<p> JavaScript : if else statement</p>
-			<h1>hier prüfet die if else anweisung ob die Input Marken als 18 sind oder nict ob er Shisha rauchen darf oder nicht </h1>
 
-			<label for=""> geben Sie Ihre Alter ein</label>
+	<section>
+		
+	<div class="if-and-else"> 
+		<form action="">
+			<h1 style="color: rgb(0, 119, 255)"> JavaScript : if else statement</h1>
+			<h3>
+				Hier prüfen wir, ob das Alter größer als 18 ist
+				oder nicht. Shisha rauchen darf man nur, wenn man volljährig ist.
+			</h3>
+			geben Sie Ihre Alter ein
 			<input type="number" id="vol"  onchange="youAge()">
 			<input type="button" value="Alter" id="mybutton">
 		</form>
 		<h1 id="yourAge"></h1>
 	</div>
+	</section>
 
-<section>
-	<form action="">
-		<label for=""> Welche Nachricht möchtest du weitergeben</label>
-		<input type="text">
-		<input type="button" value="Senden" id="Nachricht" onclick="myButton()">
-		<h1>letzte Nachricht <span id="myspan"></span></h1>
-	</form>
-</section>
-
-<section>
+<section class="rechnen">
 	<form action="">
 
 		<input id="nummer1" type="number">
@@ -44,6 +41,16 @@
 	<h2 id="result22"></h2>
 
 
+</section>
+
+<section class="nachricht">
+	<form action="">
+		<label for=""> Welche Nachricht möchtest du weitergeben</label>
+		<input type="text" id="my-nachricht">
+		<input type="button" value="Senden" id="Nachricht" onclick="myButton()">
+		<h1>letzte Nachricht <br> </h1>
+		<span id="myspan"></span>
+	</form>
 </section>
 
 <script src="assets/js/main.js">

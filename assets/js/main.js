@@ -20,20 +20,21 @@ function myResult() {
 
 
     if (nummer1.value == nummer2.value) {
-        const letzteResult = Number(nummer1.value) + Number(nummer2.value)* 5
+        const letzteResult = Number(nummer1.value) + Number(nummer2.value)* 5 //wenn die nummer gleich ist dann rechnet mit 5mal 
         ergebnisse.innerHTML = letzteResult;
-    } else if (nummer1.value !== nummer2.value) {
+    } else if (nummer1.value !== nummer2.value) {                         //wenn die nummer nicht  gleich ist dann rechnet zusammen
         const letzteResult = Number(nummer1.value) + Number(nummer2.value) 
         ergebnisse.innerHTML = letzteResult;
     }
 }
 
+//--------------------- --------------------------------
+const myNachricht = document.getElementById('my-nachricht')
+const letzteNachricht = document.getElementById('myspan')
+const Nachricht = document.getElementById('myNachricht')
 
-// const letzteNachricht = document.getElementById('myspan')
-// const Nachricht = document.getElementById('myNachricht')
-
-// function myNachricht() {
-//     if (Nachricht.value == true) { letzteNachricht.innerHTMl = myNachricht.value
-
-//     }
-// }
+function myButton() {
+  
+    if ( myNachricht.value.length > 0 ) {letzteNachricht.innerHTML = myNachricht.value}
+    else {letzteNachricht.innerHTML = 'gib Bitte Ihre Nachricht an'}
+}

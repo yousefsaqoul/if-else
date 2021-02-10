@@ -8,3 +8,45 @@ input[type="button"] {
 input[type="button"]:hover {
   background-color: lightgreen;
 }
+
+.if-and-else {
+  background-color: lightpink;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rechnen {
+  background-color: lightgreen;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nachricht {
+  background-color: lightblue;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nachricht form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 450px;
+  height: 300px;
+  border-radius: 40px;
+}
+#myspan {
+  color: lightsalmon;
+}
